@@ -79,6 +79,46 @@ CREATE TABLE OrderInfo(
 	FOREIGN KEY (productID) REFERENCES Product(productID)
 )Engine=InnoDB;
 
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (1, "Corona Extra (24)", 400, 48.99, "Imported", 2 );
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (2, "Dos Equis (12)", 400, 25.00, "Imported", 2);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (3, "Sol (24)" , 400, 40.00, "Imported", 2);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (4, "Pacifico (12)", 50, 20.00, "Imported", 2);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (5, "Cypress Honey Lager (12)", 200, 25.00 "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (6, "Island Lager (12)", 200, 25.00, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (7, "English Bay Pale Ale (12)", 200, 25.00, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (8, "Two Tides India Ale (12)", 200, 22.99, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (9, "Lions Winter Ale (12)", 200, 19.99, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (10, "False Creek Raspberry Ale (12)", 200, 26.99, "Granville Island" , 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (11, "Infamous IPA (12)", 200, 21.99, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (12, "Swing Swan Amber Ale (12)", 200, 24.99, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (13, "Hey Day Hefeweizen (12)", 200, 25.00, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (14, "Maple Shack Cream Ale (12)", 100, 23.00, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (15, "Twisted Twin Dunkelweizen (12)", 150, 29.99, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (16, "Van Dame White ISA (12)", 120, 18.99, "Granville Island", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (17, "Longboat Chocolate Porter (650mL)", 200, 7.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (18, "Ginger Beer (650mL)", 200, 7.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (19, "Apteryx IPA (650mL)", 200, 7.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (20, "Sax in the Dark (650mL)", 200, 7.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (21, "Space Goat Oat Pale Ale (650mL)", 200, 7.99, "Phillips", 3");
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (22, "Amnesiac (650mL)", 200, 7.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (23, "Blue Buck (12)" 200, 19.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (24, "Short Wave Pale Ale (12)", 200, 21.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (25, "Hop Circle IPA (12)", 200, 21.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (26, "Slipstream Ale (12)", 200, 22.75, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (27, "Phoenix Gold Lager (12)", 200, 23.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (28, "Coulrophobia IRA (12)", 200, 24.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (29, "Elsinore Wheat Brew (12)", 140, 22.00, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (30, "Krypton RyePA (12)", 100, 17.99, "Phillips", 3);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (31, "Tuff Session Ale (650mL)", 150, 6.99, "Tofino", 4);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (32, "Tofino Blonde Ale (650mL)", 150, 6.99, "Tofino", 4);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (33, "Hoppin' Cretin IPA (650mL)", 150, 6.99, "Tofino", 4");
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (34, "Kelp Stout (650mL)", 150, 6.99, "Tofino", 4);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (35, "Spruce Tree Ale (650mL)", 150, 6.99, "Tofino", 4);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (36, "Tofino Lager (650mL)", 150, 6.99, "Tofino", 4");
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (37, "Hunt and Gather Ale (650mL)", 150, 6.99, "Tofino", 4");
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (38, "Tofino Dark Lager (650mL)", 150, 6.99, "Tofino", 4");
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (39, "Dawn Patrol Coffee Porter (650mL)", 150, 6.99, "Tofino", 4");
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (40, "Cosmic Wave Double IPA (650mL)", 150, 6.99, "Tofino", 4);
 
 
 

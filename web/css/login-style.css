@@ -1,0 +1,31 @@
+body{
+    background-color:white;
+}
+
+h1{
+    align:center;
+    color:black;
+    font-weight: 200;
+}
+
+#login-div{
+    background-color: #BBB;
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 75px;
+    border-radius: 10px;
+    margin-top:150px;
+}
+
+input[type="text"], input[type="password"]{
+    background-color:white;
+    margin: 10px;
+}
+
+input[type="submit"]{
+    height: 50px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;}

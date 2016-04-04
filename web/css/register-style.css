@@ -1,0 +1,10 @@
+body{
+    background-color:white;
+}
+
+input[type="submit"]{
+    height: 50px;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}

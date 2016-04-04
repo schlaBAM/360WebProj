@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+}
+
+select{
+    margin-bottom: 10px;
+}
+
+input[type="text"]{
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    margin-right: 10px;
+    width:145px;
+}
+input[type="reset"]{
+    width:145px;
+}

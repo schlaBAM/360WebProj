@@ -1,0 +1,87 @@
+SET FOREIGN_KEY_CHECKS=0;
+DROP TABLE Person;
+DROP TABLE Orders;
+DROP TABLE Product;
+DROP TABLE ShoppingCart;
+DROP TABLE OrderInfo;
+SET FOREIGN_KEY_CHECKS=1;
+
+
+CREATE TABLE Person(
+	id int(9) NOT NULL AUTO_INCREMENT,
+	userID int(9),
+	dealerID int(9),
+	name varchar(60),
+	username varchar(20),
+	password varchar(12),
+	address varchar(20),
+	city varchar(15),
+	province char(2),
+	postalcode char(6),
+	phonenum char(10),
+	email varchar(30),
+	balance double,
+	sales double,
+	numUsers int(3),
+	accesslevel int(1),
+
+	PRIMARY KEY (id)
+)Engine=InnoDB;
+
+CREATE TABLE Orders(
+	orderID int(9) AUTO_INCREMENT,
+	personID int(9),
+	datecreated date,
+	shippedstatus varchar(12),
+	destination varchar(40),
+	cost double,
+
+	PRIMARY KEY(orderID),
+	FOREIGN KEY (personID) REFERENCES Person(id)
+)Engine=InnoDB;
+
+CREATE TABLE Product(
+	productID int(9) AUTO_INCREMENT,
+	name VARCHAR(50),
+	amount int(10),
+	price double,
+	category varchar(15),
+	schedule int(1),
+
+	PRIMARY KEY (productID)
+)Engine=InnoDB;
+
+CREATE TABLE ShoppingCart(
+	cartID int(9) AUTO_INCREMENT,
+	userID int(9),
+	productID int(9),
+	amount int(4),
+
+	PRIMARY KEY (cartID),
+	FOREIGN KEY (productID) REFERENCES Product(productID)
+		ON DELETE SET NULL
+		ON UPDATE CASCADE
+)Engine=InnoDB;
+
+CREATE TABLE OrderInfo(
+	infoID int(9) AUTO_INCREMENT,
+	orderID int(9),
+	productID int(9),
+	productamount double,
+	dealerID int(9),
+	orderdate date,
+	shipdate date,
+
+	PRIMARY KEY (infoID),
+	FOREIGN KEY (orderID) REFERENCES Orders(orderID)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE,
+	FOREIGN KEY (productID) REFERENCES Product(productID)
+)Engine=InnoDB;
+
+
+
+
+
+
+INSERT INTO Person (id,userID,dealerID,name,username,password,address,city,province,postalcode,phonenum,email,balance,sales,numUsers,accesslevel) VALUES (1,1,1,'KingPin','User','Test','123 Grove Street','San Marinos','BC','V4V2B3','','Kingpin@tmz.com',1234567.0,1234566.0,38,1);

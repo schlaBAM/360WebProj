@@ -1,0 +1,103 @@
+SET FOREIGN_KEY_CHECKS=0;
+DROP TABLE Person;
+DROP TABLE Orders;
+DROP TABLE Product;
+DROP TABLE ShoppingCart;
+DROP TABLE Shipment;
+SET FOREIGN_KEY_CHECKS=1;
+
+
+CREATE TABLE Person(
+	id int(9),
+	userID int(9),
+	dealerID int(9),
+	name varchar(20),
+	username varchar(20),
+	password varchar(12),
+	address varchar(20),
+	city varchar(15),
+	province char(2),
+	postalcode char(6),
+	phonenum char(9),
+	email varchar(30),
+	balance double,
+	sales double,
+	numUsers int(3),
+	accesslevel int(1),
+	
+	PRIMARY KEY (id)
+)Engine=InnoDB;
+
+CREATE TABLE Orders(
+	orderID int(9),
+	datecreated date,
+	amount int(5),
+	shippedstatus varchar(12),
+	destination varchar(40),
+	cost double,
+	
+	PRIMARY KEY(orderID)
+)Engine=InnoDB;
+
+CREATE TABLE Product(
+	productID int(9),
+	name VARCHAR(25),
+	amount int(10),
+	price double,
+	category varchar(15),
+	schedule int(1),
+	
+	PRIMARY KEY (productID) 
+)Engine=InnoDB;
+
+CREATE TABLE ShoppingCart(
+	cartID int(9),
+	productID int(9),
+	amount int(4),
+	
+	PRIMARY KEY (cartID),
+	FOREIGN KEY (productID) REFERENCES Product(productID) 
+		ON DELETE SET NULL 
+		ON UPDATE CASCADE
+)Engine=InnoDB;
+
+CREATE TABLE Shipment(
+	shipmentID int(9),
+	orderID int(9),
+	dealerID int(9),
+	orderdate date,
+	shipdate date,
+	
+	PRIMARY KEY (shipmentID),
+	FOREIGN KEY (orderID) REFERENCES Orders(orderID)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+)Engine=InnoDB;
+
+
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (8, "Sour Tangerine", 300, 20, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (9, "Afghani Kush", 300, 20, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (10, "Bubba Kush", 300, 15, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (11, "Chocolate Chunk Hybrid", 300, 15, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (12, "Sour Diesel", 300, 15, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (13, "Hash Brownie", 300, 5, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (14, "Peanut Butter Cookie", 300, 5, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (15, "Ginger Cookie", 300, 5, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (16, "Infused Olive Oil (50mL)", 300, 35, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (17, "Infused Coconut Oil (50mL)", 300, 35, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (18, "Raspberry Chocolate BHO (.5g)", 300, 35, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (19, "Chocolate Hazelnut BHO (.5g)", 300, 15, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (20, "Cotton Candy Shatter", 300, 60, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (21, "Raspberry Shatter", 300, 60, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (22, "Phoenix Tears", 300, 60, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (23, "Hailey's Comet", 300, 60, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (24, "Black Hash", 300, 30, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (25, "Bubble Hash", 300, 30, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (26, "Cherry Hash Oil", 300, 30, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (27, "Honey Hash Oil", 300, 30, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (28, "THC Tincture (50mL)", 300, 50, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (29, "Prerolled Joints (Random Midgrade Bud)", 300, 5, "Weed", 1);
+INSERT INTO Product(productID, name, amount, price, category, schedule) VALUES (30, "Prerolled Cones (Random Midgrade Bud)", 300, 7, "Weed", 1);
+
+
+INSERT INTO Person (id,userID,dealerID,name,username,password,address,city,province,postalcode,phonenum,email,balance,sales,numUsers,accesslevel) VALUES (1,1,1,'KingPin','User','Test','123 Grove Street','San Marinos','BC','V4V2B3','','Kingpin@tmz.com',1234567.0,1234566.0,38,1);

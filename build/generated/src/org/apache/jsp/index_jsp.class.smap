@@ -1,0 +1,26 @@
+SMAP
+index_jsp.java
+JSP
+*S JSP
+*F
++ 0 index.jsp
+index.jsp
++ 1 default-stylesheets.jsp
+default-stylesheets.jsp
++ 2 header.jsp
+header.jsp
++ 3 clearance-check.jsp
+clearance-check.jsp
+*L
+1,7:52
+1#1,26:59
+7#0,8:85
+1#2,7:92
+2#3,12:100
+7#2,2:112
+10,12:116
+21,14:128
+35,9:143
+43,7:152
+14#0,38:158
+*E

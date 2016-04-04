@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="CashmereFreeway:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/CashmereFreeway_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="CashmereFreeway/web/Web" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web/WEB-INF" />
+    </root>
+  </artifact>
+</component>

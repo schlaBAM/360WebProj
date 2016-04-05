@@ -113,7 +113,7 @@
                         total = total + pr * qty;
 
                         con.createStatement().execute("UPDATE Product SET amount=amount-" + qty + " WHERE ProductID='" + productId + "'");
-                        sql = "INSERT INTO OrderInfo (orderID, productID, productamount, orderdate, shipDate) VALUES (?, ?, ?, ?)";
+                        sql = "INSERT INTO OrderInfo (orderID, productID, productamount, orderdate) VALUES (?, ?, ?, ?)";
 
                         pstmt = con.prepareStatement(sql);
                         pstmt.setInt(1, orderId);

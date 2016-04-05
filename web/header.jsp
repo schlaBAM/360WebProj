@@ -19,14 +19,12 @@
 
                 }
             %>
-            <li><a href="listprod.jsp">Buy Beer</a>
+            <li><a href="listprod.jsp">Buy Beer </a>
                 <ul id="nav_about">
-                    <li><a href="listprod.jsp?categoryName=Weed">IPA's</a></li>
-                    <li><a href="listprod.jsp?categoryName=Opioids">Wheat Beer</a></li>
-                    <li><a href="listprod.jsp?categoryName=Meth">Cheap Stuff</a></li>
-                    <li><a href="listprod.jsp?categoryName=Hallucinogens">Dark Beer</a></li>
-                    <li><a href="listprod.jsp?categoryName=Pills">Light Beer</a></li>
-                    <li><a href="listprod.jsp?categoryName=Lager">Lager</a></li>
+                    <li><a href="listprod.jsp?categoryName=Granville%20Island">Granville Island</a></li>
+                    <li><a href="listprod.jsp?categoryName=Imported">Imported</a></li>
+                    <li><a href="listprod.jsp?categoryName=Phillips">Phillips</a></li>
+                    <li><a href="listprod.jsp?categoryName=Tofino">Tofino</a></li>
                 </ul>
             </li>
             <li><a href="contactus.html">Contact</a></li>

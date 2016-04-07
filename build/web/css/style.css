@@ -481,7 +481,7 @@ ul {
 }
 
 #nav_about{
-	margin: 0px -70px auto;
+	margin: 0 -3em auto;
 }
 
 ul li {
@@ -963,7 +963,7 @@ padding-right: 20px;  /* this causes an issue onhover. fix*/
 
 #banner {
 	background-color: #666666;
-	background-image: url("../images/drugDeal.jpg");
+	background-image: url("../images/landing_beer.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
